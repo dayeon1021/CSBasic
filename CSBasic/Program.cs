@@ -28,8 +28,19 @@ namespace CSBasic
             Console.WriteLine(true);
             Console.WriteLine(false);
 
+            int a = 2000000000;
+            int b = 1000000000;
+            Console.WriteLine((long)a + b);
+            Console.WriteLine((long)a + (long)b);
+            Console.WriteLine(a + b);       //오버플로우 발생 (범위를 벗어나서)
 
+            Console.WriteLine(int.MaxValue);
+            Console.WriteLine(long.MinValue);
+            Console.WriteLine(sizeof(char));
 
+            Console.Write("input 테스트 : ");
+            string input = Console.ReadLine();
+            Console.WriteLine(input);
         }
     }
 }
